@@ -193,6 +193,7 @@ body {
     font-size: 1.25rem;
     margin: 16px 16px;
     text-align: justify;
+    margin-right: 16px;
 }
 
 .social-links {
@@ -238,7 +239,7 @@ body {
     
     .hero-title {
         font-size: 1.5rem;
-        width: 30ch;
+        width: 28ch;
     }
     
     .hero-text {
@@ -248,7 +249,8 @@ body {
 
 @media (max-width: 600px) {
     .hero-section {
-        width: 90%;
+        width: 95%;
+        margin-left: 2%;
     }
 
     .hero-title {
@@ -257,6 +259,7 @@ body {
 
     .hero-text {
         font-size: 0.875rem;
+        margin-right: 3%;
     }
     
     .profile-photo {
@@ -497,6 +500,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .projects-section {
+        max-width: 90%;
+    }
+
     .project-card {
         flex-direction: column;
         align-items: flex-start;
