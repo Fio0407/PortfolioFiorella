@@ -135,7 +135,8 @@ body {
 
  
 .hero-title {
-    font-size: 2.5rem;
+    width: 25ch;
+    font-size: 2.2rem;
     color: #8698ff;
     margin: 0;
     font-family: 'Ethereal', sans-serif;
