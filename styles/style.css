@@ -226,11 +226,17 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
         width: 80%;
-        margin-left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        width: 90%;
     }
     
     .profile-photo {
@@ -249,7 +255,7 @@ body {
 
 @media (max-width: 600px) {
     .hero-section {
-        width: 100%;
+        width: 97%;
         margin-left: 2%;
     }
 
@@ -297,8 +303,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 24px;
     margin: 20px auto;
-    max-width: 1025px;
-    width: 90%;
+    width: 77%;
     font-family: 'Archia', sans-serif;
     opacity: 0;
     transform: translateY(20px);
@@ -383,6 +388,21 @@ body {
     margin-bottom: 20px;
 }
 
+.skills-category-wrapper {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-category-wrapper:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 90px); /* Ajusta el ancho según el padding y margen */
+    border-bottom: 2px solid #e0e0e0;
+}
+
 .skills-list li {
     background-color: #fff;
     border-radius: 25px;
@@ -410,6 +430,11 @@ body {
     .skills-column {
         flex: 1 1 100%; 
     }
+
+    .skills-section {
+        width: 90%;
+    }
+    
 }
 
 /* Colores específicos para cada categoría */
