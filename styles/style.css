@@ -133,6 +133,12 @@ body {
     font-family: 'Archia', sans-serif;
 }
 
+.wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
  
 .hero-title {
     width: 25ch;
@@ -222,7 +228,7 @@ body {
 @media (max-width: 900px) {
     .hero-section {
         flex-direction: column;
-        width: 50%;
+        width: 80%;
         margin-left: 5%;
     }
     
@@ -232,6 +238,7 @@ body {
     
     .hero-title {
         font-size: 1.5rem;
+        width: 30ch;
     }
     
     .hero-text {
@@ -425,7 +432,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
-    max-width: 1030px;
+    max-width: 78%;
     border-radius: 20px;
     margin: 20px auto;
 }
@@ -536,7 +543,7 @@ body {
   
 .item .content {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 20px;
     right: 20px;
     color: #fff;
@@ -544,6 +551,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
   
 .name {
@@ -563,7 +571,7 @@ body {
   
   .des {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     line-height: 1.5;
   }
   
@@ -589,6 +597,7 @@ body {
     right: 20px;
     display: flex;
     gap: 10px;
+    z-index: 2; 
   }
   
   .buttons a {
@@ -652,7 +661,7 @@ body {
   /* Responsive adjustments */
 @media (max-width: 768px) {
   .item {
-    height: 300px;
+    height: 400px;
   }
 
   .name {
@@ -671,9 +680,16 @@ body {
     padding: 10px 20px;
     font-size: 14px;
   }
+
+  .buttons {
+    bottom: -10px;
+    right: 20px;
+  }
+
   #projects-section .skills-list {
     display: none;
   }
+  
 }
 
 
