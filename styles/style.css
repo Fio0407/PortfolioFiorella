@@ -448,6 +448,7 @@ body {
 @media (max-width: 768px) {
     .projects-container {
         max-width: 90%; 
+        min-height: 300px;
     }
 }
 @media (max-width: 1200px) {
@@ -460,6 +461,22 @@ body {
     display: flex;
     overflow: hidden;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 367px) {
+    .projects-container {
+        max-width: 90%; 
+        min-height: 450px;
+    }
+    .slide {
+        min-height: 450px;
+    }
 }
   
 .item {
