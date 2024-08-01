@@ -611,7 +611,19 @@ body {
     display: flex;
     gap: 10px;
     z-index: 2; 
-    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .buttons .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    bottom: 10px;
+    right: 5px;
+  }
 }
   
 .btn-demo {
@@ -719,9 +731,12 @@ body {
     font-size: 14px;
   }
 
-  .btn-demo {
-    display: none;
-    }
+  .buttons .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    bottom: none;
+    right: 0px;
+  }
 
   #projects-section .projects-skills-list {
     display: none;
