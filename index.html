@@ -1,279 +1,615 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assests/me1.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/style.css"/>
-    <title>Fiorella Jarama</title>
-    <meta name="description" content="¡Hola! Soy Fiorella Jarama, estudiante peruana de Ingeniería de Software">
-</head>
-<body>
-    <main>
-        <div class="container navbar-container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#hero-section">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#skills-section">Mis Habilidades</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#projects-section">Mis Proyectos</a>
-                      </li>
-                    </ul>
-                    <div class="language-item">
-                        <div class="language-container">
-                            <span class="es">ES</span>
-                            <input type="checkbox" id="check" class="check"/>
-                            <span class="en">EN</span>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-            </nav>
-        </div> 
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Fiorella Jarama | Portfolio, Visit and know about me & my projects. I value simple content structure, clean design patterns, and thoughtful interactions." />
+  <meta name="keywords"
+    content="Fiorella Jarama,Fiorella Jarama portfolio,Fiorella Jarama Portfolio,fio0704,Fiorella Jarama site,Fiorella Jarama Site,Fiorella Jarama me,Fiorella Jarama web,Fiorella Jarama github,vinodjangid site,vinodjangid uiverse,uiverse,Fiorella Jarama uiverse,Fiorella Jarama frontend developer,frontend developer,Fiorella Jarama jaipur,vinod jaipur" />
+  <meta name="author" content="Fiorella Jarama" />
+  <meta property="og:title" content="Fiorella Jarama | Portfolio" />
+  <meta property="og:description"
+    content="Hi! My name is Fiorella. I'm a web developer and a data analysis. Visit and know about me & my projects. I value simple content structure, clean design patterns, and thoughtful interactions." />
+
+  <meta property="og:url" content="https://fiorellajarama.netlify.com" />
+  <meta property="og:site_name" content="Fiorella Jarama Portfolio" />
+
+  <meta name="twitter:title" content="Fiorella Jarama | Portfolio" />
+  <meta name="twitter:description"
+  content="Hi! My name is Fiorella. I'm a web developer and a data analysis. Visit and know about me & my projects. I value simple content structure, clean design patterns, and thoughtful interactions." />
+  <title>Fiorella Jarama | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/me1.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="Fiorella Jarama logo">
+        <div class="logo-top">
+          <img src="src/png/me1.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">H</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">l</p>
+          <p class="jello">o</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">F</p>
+          <p class="jello">i</p>
+          <p class="jello">o</p>
+          <p class="jello">r</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">l</p>
+          <p class="jello">a</p>
+          &nbsp;
+          <p class="jello">J</p>
+          <p class="jello">a</p>
+          <p class="jello">r</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          <p class="jello">a</p>
+          <p class="jello">.</p>
+        </article>
+
+        
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Aspiring Data Analyst with experience in Backend Development, Data Analytics, and Automation. I love working on innovative AI projects, collaboration, and building data-driven solutions.<br /><br />
+          I value simple content structure, clean design patterns, and thoughtful interactions.
+        </p>        
       
-        <section id="hero-section" class="hero-section">
-            <div class="container hero-container">
-                <div class="container-fluid hero-container2">
-                    <img src="assests/me5.jpg" class="img-fluid" alt="assests/me5.jpg">
-                    <div class="hero-content">
-                        <div class="wrapper">
-                                <h2 class="hero-title">¡Hola! Soy Fiorella Jarama</h2>
-                        </div>
-                            <p class="hero-text">
-                                ¡Estudiante de Ingeniería de Software en la UPC! Apasionada por la tecnología y siempre buscando nuevos retos para seguir aprendiendo.
-                              </p>  
-                                <div class="social-links">
-                                    <a href="mailto:fiorellajp0704@outlook.com" title="Enviar un correo" class="social-link">
-                                        <svg class="h-12 w-auto hover:-translate-y-1 duration-200" viewBox="0 -31.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
-                                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                         <g id="SVGRepo_iconCarrier">
-                                                <g>
-                                                 <path d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z" fill="#4285F4"></path>
-                                                 <path d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z" fill="#34A853"></path>
-                                                 <polygon fill="#EA4335" points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061"></polygon>
-                                                 <path d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z" fill="#FBBC04"></path>
-                                                 <path d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z" fill="#C5221F"></path>
-                                                </g>
-                                            </g>
-                                        </svg>                   
-                                     </a>
-                                <a href="https://www.linkedin.com/in/fiorellajarama/" target="_blank" title="Visitar LinkedIn de Fiorella Jarama" class="social-link">
-                                    <svg class="h-12 w-auto hover:-translate-y-1 duration-200" alt="LinkedIn badge" xmlns="http://www.w3.org/2000/svg" aria-label="LinkedIn" role="img" viewBox="0 0 512 512" fill="#FFFFFF" stroke="#FFFFFF">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <rect width="512" height="512" rx="15%" fill="#0077b5"></rect>
-                                            <circle cx="142" cy="138" r="37"></circle>
-                                            <path stroke="#ffffff" stroke-width="66" d="M244 194v198M142 194v198"></path>
-                                            <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"></path>
-                                        </g>
-                                    </svg>                     
-                                </a>
-                                <a href="https://github.com/Fio0407" target="_blank" title="Visitar GitHub de Fiorella Jarama" class="social-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>  
-                </div>
-            </div> 
-        </section>
-        
-        <section id="skills-section" class="skills-section">
-            <div class="container skills-container">
-                <h2>Mis Habilidades</h2>
-                <div class="skills-content">
-                    <div class="skills-column">
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Frontend</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fab fa-vuejs"></i> Vue</li>
-                                    <li><i class="fab fa-angular"></i> Angular</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Backend</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fas fa-cogs"></i> Spring Boot</li>
-                                    <li><i class="fas fa-cogs"></i> .NET</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Base de Datos</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fas fa-database"></i> MongoDB</li>
-                                    <li><i class="fas fa-database"></i> MySQL</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="skills-column">
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Desarrollo Móvil</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fab fa-android"></i> Kotlin</li>
-                                    <li><i class="fab fa-apple"></i><i class="fab fa-android"></i> Flutter</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Lenguajes de Programación</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fab fa-python"></i> Python</li>
-                                    <li><i class="fab fa-js"></i> JavaScript</li>
-                                    <li><i class="fab fa-cuttlefish"></i> C++</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Herramientas</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fas fa-laptop-code"></i> Microsoft Office</li>
-                                    <li><i class="fab fa-git"></i> Git</li>
-                                    <li><i class="fas fa-paint-brush"></i> Figma</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="skills-category-wrapper">
-                            <div class="skills-category">
-                                <h3>Lenguajes</h3>
-                                <ul class="skills-list">
-                                    <li><i class="fas fa-globe"></i> Inglés</li>
-                                    <li><i class="fas fa-globe"></i> Español</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>    
-                </div> 
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:fiorellajp0704@outlook.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
             </div>
-        </section>
-        
- 
-        <section id="projects-section" class="projects-section">
-            <div class="container projects-container">
-                <h2>Mis Proyectos</h2>
-                <div class="container-fluid projects-container2">
-                    <div class="slide">
-                        <div class="item" style="background-image: url(assests/alToque.png);">
-                            <div class="content">
-                                <div class="name">AlToque!</div>
-                                <div class="des">Plataforma móvil que conecta a usuarios con especialistas calificados en diversas áreas. Se hizo con un grupo de 5 compañeros para un trabajo de la universidad.</div>
-                                <ul class="projects-skills-list">
-                                    <li><i class="fab fa-android"></i>Kotlin</li>
-                                </ul>
-                                <div class="buttons">
-                                    <a href="https://appmobile-wx62-altoque-grupo2.github.io/Landing-Page/" class="btn btn-primary btn-demo">Ver Demo</a>
-                                    <a href="https://github.com/AppMobile-WX62-AlToque-GRUPO2" class="btn btn-secondary btn-repo">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(assests/pocketPartners.png);">
-                            <div class="content">
-                                <div class="name">PocketPartners</div>
-                                <div class="des">Plataforma diseñada para dividir gastos compartidos, facilitando la administración de los gastos conjuntos, se hizo con un grupo de 2 compañeros para un trabajo de la universidad.</div>
-                                <ul class="projects-skills-list">
-                                    <li><i class="fab fa-angular"></i> Angular</li>
-                                    <li><i class="fas fa-cogs"></i> Springboot</li>
-                                </ul>
-                                <div class="buttons">
-                                    <a href="https://pocketpartners.vercel.app/sign-in" class="btn btn-primary btn-demo">Ver Demo</a>
-                                    <a href="https://github.com/PocketPartners" class="btn btn-secondary btn-repo">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(assests/opticFiberForAll.png);">
-                            <div class="content">
-                                <div class="name">Optic Fiber For All</div>
-                                <div class="des">Plataforma que se centra en proporcionar acceso a una red de fibra óptica de alta velocidad, se hizo con un grupo de 2 compañeros para un trabajo de la universidad.</div>
-                                <ul class="projects-skills-list">
-                                    <li><i class="fab fa-js"></i> JavaScript</li>
-                                    <li><i class="fab fa-python"></i> Python</li>
-                                    <li><i class="fas fa-code"></i> Visual Studio Code</li>                                
-                                </ul>
-                                <div class="buttons">
-                                    <a href="https://github.com/Fio0407/ComplejidadAlgoritmicaTrabajo" class="btn btn-secondary btn-repo">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(assests/fastService.png);">
-                            <div class="content">
-                                <div class="name">FastService</div>
-                                <div class="des">Plataforma que conecta a usuarios con trabajadores de reparación confiables, se hizo con un grupo de 3 compañeros para un trabajo de la universidad.</div>
-                                <ul class="projects-skills-list">
-                                    <li><i class="fab fa-vuejs"></i> Vue.js</li>
-                                    <li><i class="fas fa-cogs"></i> .NET</li>
-                                </ul>
-                                <div class="buttons">
-                                    <a href="https://main--darling-stroopwafel-93011e.netlify.app/" class="btn btn-primary btn-demo">Ver Demo</a>
-                                    <a href="https://github.com/AplicacionesWeb-GRUPO1" class="btn btn-secondary btn-repo">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(assests/re_forest.png);">
-                            <div class="content">
-                                <div class="name">Re Forest: Cataclysm</div>
-                                <div class="des">Un videojuego hecho con C++ y Visual Studio Community, se realizo con dos compañeros.</div>
-                                <ul class="projects-skills-list">
-                                    <li><i class="fab fa-cuttlefish"></i> C++</li>
-                                </ul>
-                                <div class="buttons">
-                                    <a href="https://github.com/Fio0407/TF---Programacion-orientada-a-Objetos" class="btn btn-secondary btn-repo">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="button">
-                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>    
-                </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
             </div>
-        </section>
-        
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-left">
-                    <a href="mailto:fiorellajp0704@outlook.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+51938862395" class="footer-icon"><i class="fas fa-phone"></i></a>
-                    <a href="https://www.linkedin.com/in/fiorellajarama/" class="footer-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Fio0407" class="footer-icon"><i class="fab fa-github"></i></a>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              Hi! My name is Fiorella. I'm a software engineering student at UPC. I have a passion for data analysis and automation, and I love creating innovative projects. My interest in tech started when I began exploring data analysis and AI applications.
+            </p>
+            <br />
+            <p tabindex="0">
+              Instead of focusing on just one area, I discovered my enjoyment for both data analysis and AI. Building projects from scratch has taught me a lot about coding and problem-solving!
+            </p>
+            <br />
+            <p tabindex="0">
+              My main focus these days is combining AI with data-driven solutions. I like to automate processes and enjoy bringing ideas to life using intelligent systems.
+            </p>
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+
+        <div class="text">Resume</div>
+      </button>
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/png/me.jpg" alt="Fiorella Jarama" tabindex="0" aria-label="image of fio" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/python.png" alt="python skill" class="tech-stack-logo" />
+              <span class="tooltip">PYTHON</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
+              <span class="tooltip">C++</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/office.png" alt="office skill" class="tech-stack-logo" />
+              <span class="tooltip">OFFICE 365</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/selenium-ide128.png" alt="selenium skill" class="tech-stack-logo" />
+              <span class="tooltip">SELENIUM</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/postgres.png" alt="postgres skill" class="tech-stack-logo" />
+              <span class="tooltip">POSTGRESQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/mysql.png" alt="mysql skill" class="tech-stack-logo" />
+              <span class="tooltip">MYSQL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/angular.png" alt="angular language skill" class="tech-stack-logo" />
+              <span class="tooltip">ANGULARJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/pngwing.com (3).png" alt="nextjs skill" class="tech-stack-logo" />
+              <span class="tooltip">NEXTJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/spring.png" alt="springboot skill" class="tech-stack-logo" />
+              <span class="tooltip">SPRINGBOOT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
+              <span class="tooltip">FIGMA</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Web Scrapper</article>
+                <p class="ProjectDescription">
+                  Pexelicons: A world of personalized file folder icons to
+                  transform your PC into a reflection of your style.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/Pexelicons" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://vinodjangid07.github.io/Pexelicons/" target="_blank" class="cta"
+                    aria-label="Visit Pexelicons Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </div>
-                <div class="footer-right">
-                    <p>&copy;2024 Fiorella Jarama</p>
-                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
+              </div>
             </div>
-        </footer>
-        
-        
-    </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="../scripts/main.js"></script>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <img src="src/webp/cropped-1086600-192x192.webp" alt="comickaze website favicon"
+                  class="faviconforProject" />
+                <article class="ProjectHeading">Agroconnect</article>
+                <p class="ProjectDescription">
+                  ComicKaze is an ecommerce website built on wordpress by me
+                  as a freelancer. It specializes in selling anime
+                  merchandise.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://comickaze.in" target="_blank" class="cta" aria-label="Visit Comickaze live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/comickaze-preview.webp" alt="comickaze website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/svg/aquaregia-favicon.svg" alt="Aquaregia website favicon"
+                  class="faviconforProjectAquaregia" />
+                <article class="ProjectHeading">PocketPartners</article>
+                <p class="ProjectDescription">
+                  A website for University Maharaja College fest "Aquaregia"
+                  for event registrations.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/Aquaregia" target="_blank" class="github-redirect"
+                    aria-label="Visit Aquaregia on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://vinodjangid07.github.io/Aquaregia/" target="_blank" class="cta"
+                    aria-label="Visit Aquaregia Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/Aquaregia-project.webp" alt="Aquaregia website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box4" id="project-box4">
+              <div class="info-div">
+                <img src="src/webp/qr-favicon.webp" alt="Qr generator website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">QR Generator</article>
+                <p class="ProjectDescription">
+                  A webpage to make a QR Code from text using API.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/QR-Generator" target="_blank" class="github-redirect"
+                    aria-label="Visit qr generator on github">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://vinodjangid07.github.io/QR-Generator/" target="_blank" class="cta"
+                    aria-label="Visit qr generator live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/QRgeneratorProject.webp" alt="qr generator website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box3" id="project-box3">
+              <div class="info-div">
+                <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">React Netflix Clone</article>
+                <p class="ProjectDescription">
+                  A webpage to categorize the shows to redirect user to watch
+                  the show.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/Netflix-clone" target="_blank" class="github-redirect"
+                    aria-label="Visit Netflix clone on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://react-project-20.netlify.app/" target="_blank" class="cta"
+                    aria-label="Visit netflix clone live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box1" id="project-box1">
+              <div class="info-div">
+                <img src="src/webp/axocean-favicon.webp" alt="Axocean website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">AXOCEAN</article>
+                <p class="ProjectDescription">
+                  E-commerce website frontend work to choose people their
+                  favorite design of product and redirect to flipkart shopping
+                  site.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/AXOCEAN" target="_blank" class="github-redirect"
+                    aria-label="Visit axocean on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://vinodjangid07.github.io/AXOCEAN/" target="_blank" class="cta"
+                    aria-label="Visit axocean live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/AXOCEAN-project.webp" alt="Axocean website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <a href="https://www.instagram.com/pexel_ui/" target="_blank" tabindex="0"
+              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a>
+
+            <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer=" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/vinodjangid07" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="mailto:infovinodjangid@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/FiorellaJaramaCV.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+ <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 
 </body>
+
 </html>
