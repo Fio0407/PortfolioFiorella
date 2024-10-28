@@ -965,6 +965,10 @@ noscript {
     justify-content: center
 }
 
+.projects-section-div {
+    gap: 20px;
+}
+
 .projects-heading,
 .section-heading,
 .skills-heading {
